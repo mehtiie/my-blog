@@ -18,7 +18,7 @@ body {
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(8px);
     z-index: 1000;
- box-sizing: border-box; /* 👈 مهم برای جلوگیری از بیرون زدگی */
+    box-sizing: border-box;
 }
 
 .navbar .menu a {
@@ -34,7 +34,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     background: linear-gradient(135deg, #0b1f16, #123b2a);
 }
 
@@ -111,7 +110,6 @@ article {
     max-width: 580px;
     margin: 100px auto;
     padding: 20px;
-
     direction: rtl;
     text-align: right;
 }
@@ -129,3 +127,47 @@ article {
     margin-bottom: 15px;
 }
 
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar .menu a {
+        margin: 6px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    .post {
+        width: 95%;
+        margin: 100px auto;
+        padding: 15px;
+    }
+
+    .categories {
+        width: 90%;
+        margin: 100px auto;
+    }
+}

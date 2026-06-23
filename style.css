@@ -1,0 +1,131 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #0b1f16;
+    color: #eaeaea;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 🧭 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+ box-sizing: border-box; /* 👈 مهم برای جلوگیری از بیرون زدگی */
+}
+
+.navbar .menu a {
+    color: #eaeaea;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* 🌄 Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(135deg, #0b1f16, #123b2a);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.scroll-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #eaeaea;
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+/* 📖 نوشته‌ها */
+main {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+}
+
+/* 🧑 درباره من */
+.about {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+/* 📂 صفحه دسته‌بندی */
+.categories {
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.categories h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cat {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cat:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+/* 📖 صفحه نوشته */
+.post {
+    max-width: 580px;
+    margin: 100px auto;
+    padding: 20px;
+
+    direction: rtl;
+    text-align: right;
+}
+
+.post h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post p {
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+

@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,21 +22,35 @@ body {
     box-sizing: border-box;
 }
 
+.navbar .logo {
+    font-size: 18px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 15px;
+}
+
 .navbar .menu a {
     color: #eaeaea;
-    margin: 0 10px;
     text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
 }
 
 /* 🌄 Hero */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: linear-gradient(135deg, #0b1f16, #123b2a);
     padding: 0 15px;
+
+    /* 👇 جلوگیری از افتادن زیر navbar */
+    padding-top: 80px;
 }
 
 .hero h1 {
@@ -133,36 +147,26 @@ article {
 @media (max-width: 768px) {
 
     .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         padding: 10px 15px;
-        position: fixed;
     }
 
     .navbar .logo {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .navbar .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-        width: auto;
-        margin-top: 0;
+        gap: 10px;
     }
 
     .navbar .menu a {
-        margin: 0;
-        font-size: 14px;
-        white-space: nowrap;
+        font-size: 13px;
     }
 
-    /* ⭐ مهم‌ترین تغییر اینجاست */
     .hero {
-        height: 100vh;           /* 👈 فول صفحه */
-        padding-top: 80px;       /* 👈 فاصله از navbar */
+        min-height: 100vh;
+        height: 100dvh;
+
+        padding-top: 70px;
         padding-bottom: 20px;
     }
 
@@ -176,7 +180,7 @@ article {
 
     main {
         padding: 12px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     article {

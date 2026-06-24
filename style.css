@@ -4,7 +4,7 @@ body {
     color: #eaeaea;
     margin: 0;
     line-height: 1.6;
-    overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+    overflow-x: hidden;
 }
 
 /* 🧭 Navbar */
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,7 +36,7 @@ body {
     align-items: center;
     text-align: center;
     background: linear-gradient(135deg, #0b1f16, #123b2a);
-    padding: 0 15px; /* مهم برای موبایل */
+    padding: 0 15px;
 }
 
 .hero h1 {
@@ -124,7 +124,7 @@ article {
 
 .post p {
     font-size: 20px;
-    line-height: 1.7; /* کمی راحت‌تر برای خواندن */
+    line-height: 1.7;
     opacity: 0.9;
     margin-bottom: 15px;
 }
@@ -136,8 +136,7 @@ article {
         flex-direction: column;
         align-items: flex-start;
         padding: 12px;
-                position: relative; /* 👈 اینو اضافه کن */
-}
+        position: relative;
     }
 
     .navbar .menu {

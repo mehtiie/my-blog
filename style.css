@@ -5,6 +5,9 @@ body {
     margin: 0;
     line-height: 1.6;
     overflow-x: hidden;
+
+    /* 👇 فاصله برای navbar */
+    padding-top: 70px;
 }
 
 /* 🧭 Navbar */
@@ -40,17 +43,16 @@ body {
 
 /* 🌄 Hero */
 .hero {
-    min-height: 100vh;
-    height: 100dvh;
+    min-height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-align: center;
     background: linear-gradient(135deg, #0b1f16, #123b2a);
     padding: 0 15px;
-
-    /* 👇 جلوگیری از افتادن زیر navbar */
-    padding-top: 80px;
 }
 
 .hero h1 {
@@ -146,6 +148,10 @@ article {
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
+    body {
+        padding-top: 60px;
+    }
+
     .navbar {
         padding: 10px 15px;
     }
@@ -163,11 +169,8 @@ article {
     }
 
     .hero {
-        min-height: 100vh;
-        height: 100dvh;
-
-        padding-top: 70px;
-        padding-bottom: 20px;
+        min-height: calc(100vh - 60px);
+        height: calc(100dvh - 60px);
     }
 
     .hero h1 {

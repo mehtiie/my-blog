@@ -5,9 +5,6 @@ body {
     margin: 0;
     line-height: 1.6;
     overflow-x: hidden;
-
-    /* 👇 فاصله برای navbar */
-    padding-top: 70px;
 }
 
 /* 🧭 Navbar */
@@ -23,6 +20,7 @@ body {
     backdrop-filter: blur(8px);
     z-index: 1000;
     box-sizing: border-box;
+    height: 70px;
 }
 
 .navbar .logo {
@@ -53,6 +51,14 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #0b1f16, #123b2a);
     padding: 0 15px;
+
+    /* 👇 این خط مشکل فاصله رو کامل حل می‌کنه */
+    margin-top: 70px;
+}
+
+/* 👇 جلوگیری از کشیده شدن متن */
+.hero > div {
+    transform: translateY(-10px);
 }
 
 .hero h1 {
@@ -145,15 +151,36 @@ article {
     margin-bottom: 15px;
 }
 
+/* ✍️ یادداشت‌های کوتاه */
+.notes-page {
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 20px;
+    direction: rtl;
+}
+
+.notes-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.note {
+    background: rgba(255,255,255,0.05);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
-    body {
-        padding-top: 60px;
-    }
-
     .navbar {
         padding: 10px 15px;
+        height: 60px;
     }
 
     .navbar .logo {
@@ -171,6 +198,11 @@ article {
     .hero {
         min-height: calc(100vh - 60px);
         height: calc(100dvh - 60px);
+        margin-top: 60px;
+    }
+
+    .hero > div {
+        transform: translateY(-5px);
     }
 
     .hero h1 {
@@ -205,6 +237,11 @@ article {
     }
 
     .categories {
+        width: 92%;
+        margin: 100px auto;
+    }
+
+    .notes-page {
         width: 92%;
         margin: 100px auto;
     }

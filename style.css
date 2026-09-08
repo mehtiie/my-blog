@@ -23,6 +23,7 @@ body {
     backdrop-filter: blur(8px);
     z-index: 1000;
     box-sizing: border-box;
+    direction: ltr;
 }
 
 .navbar .logo {
@@ -143,6 +144,15 @@ article {
     line-height: 1.7;
     opacity: 0.9;
     margin-bottom: 15px;
+}
+
+/* 🖼️ عکس یادداشت */
+.post img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 8px;
 }
 
 /* 📱 MOBILE */
